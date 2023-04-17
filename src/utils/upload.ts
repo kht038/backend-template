@@ -1,4 +1,3 @@
-// Helper function that creates an Amazon S3 service client module.
 import { PutObjectCommand, PutObjectCommandOutput, S3Client } from '@aws-sdk/client-s3';
 import path from 'path';
 import fs from 'fs';

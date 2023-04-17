@@ -1,6 +1,6 @@
-export const config = {
+export default {
   env: process.env.NODE_ENV,
-  port: process.env.PORT,
+  port: 3000,
   s3: {
     accessKeyId: process.env.S3_ACCESS_KEY_ID,
     secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
@@ -13,5 +13,9 @@ export const config = {
     refreshTokenExpires: process.env.JWT_REFRESH_EXPIRATION_DAYS,
     resetPasswordExpires: process.env.JWT_RESET_PASSWORD_EXPIRATION_MINUTES,
     verifyEmailExpires: process.env.JWT_VERIFY_EMAIL_EXPIRATION_MINUTES,
+  },
+  mongodb: {
+    url: process.env.DB_URL,
+    db: process.env.DB_NAME,
   },
 };

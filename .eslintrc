@@ -4,7 +4,10 @@
   "rules": {
     "no-console": "off",
     "import/prefer-default-export": "off",
-    "max-len": ["error", { "code": 120 }]
+    "max-len": ["error", { "code": 120 }],
+    "arrow-body-style": ["error", "always"],
+    "import/no-unresolved": "off", // 절대 경로 허용
+    "import/extensions": [1, "never"]
   },
   "extends": [
     "eslint-config-airbnb-base",
