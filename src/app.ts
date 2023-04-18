@@ -25,7 +25,7 @@ const initApp = async () => {
   app.use(cors());
   app.options('*', cors());
 
-  await listenExpressServer(app, config.port);
+  await listenExpressServer(app, Number(config.port));
 
   console.log('Express server initialized.');
 };
